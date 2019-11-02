@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>debugger</title>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.js"
+  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="span1"></div>
+	<div >
+       
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/RnK3H6sqpas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<button id="button1">Button</button>
+	<footer id="footer1">
+		<p>loremsum40vrnvriunvoriveprovpormvoirnurirpoermvprmeprmvporvmrpomprovporveirnviorvurvoirnvirvpvprvprvpiernvoirnvirvopermvormvpormvoiernvoirnvievevernv</p>
+	</footer>
+<script type="text/javascript">
+	// function display()
+	// {
+	// 	x=10;
+	// 	y=15;
+	// 	z=x+y;
+	// 	debugger;
+	// 	console.log(x);
+	// 	console.log(z);
+	// }
+	// display();
+	$(document).ready(function(){
+		$('#footer1').hide();
+		$('#button1').click(function(){
+		 if($("#footer1").css("display")=="none"){
+		 	$("#footer1").show();
+		 }	
+		 else{
+		 	$("#footer1").hide();
+		 }
+		});
+	});
+
+	$(document).ready(function(){
+     var btn=$('<input/>').attr({type:'button', name:'mybutton', value:'Button'});
+       $('#span1').append(btn);
+       $('#span1').append('<p style="color:red">sdff</p>');
+       $('#span1').append('<li style="font-size:30px">mohan</li>')
+       // $('p').style.bgcolor='red';
+
+	})
+</script>
+</body>
+</html>
